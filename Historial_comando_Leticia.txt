@@ -1,0 +1,57 @@
+sudo ./VBoxLinuxAdditions.run
+sudo bash VBoxLinuxAdditions.run
+sudo apt update
+sudo apt install bzip2
+sudo apt update
+sudo apt install git openssh-client -y
+git config --global user.name "LetiNascimento"
+git config --global user.email "leticianascimentoar@gmail.com"
+ssh-keygen
+cat -/.ssh/id_rsa.pub
+cat $HOME/ .ssh/id_rsa.pub
+cat /home/Leti/.ssh/id_rsa.pub
+cat $HOME/.sshid_rsa.pub
+cat $HOME/.ssh/id_ed25519.pub
+sudo bash VBoxLInuxAdditions.run
+sudo bash VBoxLinuxAdditions.run
+sudo reboot
+cd
+pwd
+mkdir repogit
+cd repogit
+git clone git@github.com:LetiNascimento/TP_AySO.git
+ls ~/repogit
+cd ~/repogit/TP_AySO
+ls -la
+git status
+cat /etc/os-release
+man grep
+grep HOME_URL /etc/os-release
+grep home_url /etc/os-release
+grep -i home_url/etc/os-release
+grep -i home_url /etc/os-release
+whoami
+echo "Usuario=$(whoami)" > datos_usuario.txt
+ls
+cat datos_usuario.txt
+git add datos_usuario.txt
+git status
+git commit -m "ADD: archivo datos_usuario.txt con usuario"
+git push
+cat /proc/cpuinfo
+grep "model name" /proc/cpuinfo | head -n1
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+cat datos_usuario.txt
+git add datos_usuario.txt
+git commit -m "Anadiendo informacion CPU"
+cat <<EOF >> README.md
+Alumno): Leticia
+"sort via a key"
+DIvision 315-2 Turno: Noche
+EOF
+
+cat README.md
+git add README.md datos_usuario.txt
+git commit -m "ADD: Anadiendo Readme y datos de usuario"
+git push
+history -a
